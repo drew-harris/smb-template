@@ -1,8 +1,5 @@
 import { Client, Events, GatewayIntentBits } from "discord.js";
-require("dotenv/config"); // Load environment variables
-import { startServer } from "./fastify";
 import { handleCommand } from "./command/handler";
-console.log(process.env.TOKEN);
 
 const client = new Client({
   intents: [
@@ -31,7 +28,5 @@ if (!token) {
 }
 
 client.login(token);
-
-startServer();
 
 export { client };
