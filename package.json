@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "typecheck": "npx tsc --noEmit",
-    "run": "bun src/index.ts",
+    "start": "bun src/index.ts",
     "push-commands": "bun src/command/pushScript.ts"
   },
   "devDependencies": {
