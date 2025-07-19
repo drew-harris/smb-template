@@ -20,7 +20,7 @@ client.on(Events.InteractionCreate, (interaction) => {
   }
 });
 
-const token = process.env.REAL_TOKEN;
+const token = process.env.TOKEN;
 
 if (!token) {
   console.error("No token provided!");
